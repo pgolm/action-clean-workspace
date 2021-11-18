@@ -1,0 +1,13 @@
+---
+name: Test Action
+on:
+  push:
+    branches: [main]
+jobs:
+  test:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: pgolm/action-clean-workspace@v1
+      - name: dummy step
+        if: always()
+        run: echo "dummy"

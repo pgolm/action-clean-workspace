@@ -1,0 +1,7 @@
+name: "Workspace cleanup"
+description: "Simply removes all files from the root directory."
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  entrypoint: "/cleanup.sh"
+  post-entrypoint: "/cleanup.sh"
