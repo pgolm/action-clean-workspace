@@ -10,4 +10,4 @@ jobs:
       - uses: pgolm/action-clean-workspace@v1
       - name: dummy step
         if: always()
-        run: echo "dummy"
+        run: echo "dummy" > dummy.txt
